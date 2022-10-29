@@ -1,0 +1,115 @@
+.advantages {
+  background-color: $color-alice-blue2;
+}
+
+.advantages .container {
+  @media (min-width: $mobile-width-only) {
+    padding: 50px 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 80px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 120px 0;
+  }
+}
+
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages__item {
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid $color-whisper;
+  border-left: 5px solid $color-deepsky-blue1;
+  box-sizing: border-box;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  @media (min-width: $mobile-width-only) and (max-width: 769px) {
+    width: 100%;
+    min-height: 325px;
+    padding: 30px 30px 35px;
+    margin-right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 46%;
+    min-height: 360px;
+    padding: 40px 34px 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48%;
+    min-height: 300px;
+    padding: 40px 44px 35px;
+  }
+
+  &:hover,
+  &:hover .advantages__item-title,
+  &:hover .advantages__description,
+  &:hover .advantages__icon {
+    background-color: $color-deepsky-blue1;
+    color: $color-alice-blue3;
+    border-color: $color-deepsky-blue1;
+    fill: $color-alice-blue3;
+  }
+}
+
+.advantages__icon {
+  fill: $color-deepsky-blue1;
+  margin-bottom: 20px;
+}
+
+.advantages__item-title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  color: $color-deepsky-blue1;
+
+  @media (min-width: $mobile-width-only) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.advantages__description {
+  margin: 0;
+  font-family: "PT Mono", "Courier", monospace;
+  font-weight: 400;
+  line-height: 1.35;
+  color: $color-black-pearl1;
+
+  @media (min-width: $mobile-width-only) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    min-height: 120px;
+  }
+}

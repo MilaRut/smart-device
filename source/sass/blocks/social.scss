@@ -1,0 +1,15 @@
+.social {
+  width: 150px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 10px;
+  }
+}
+
+.social__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}

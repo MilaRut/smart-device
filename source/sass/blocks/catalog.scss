@@ -1,0 +1,123 @@
+.catalog {
+  background-color: $color-black-pearl1;
+}
+
+.catalog .container {
+  @media (min-width: $mobile-width-only) {
+    padding: 50px 0 86px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 80px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 120px 0;
+  }
+}
+
+.catalog__title {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.41;
+  color: $color-default-white;
+
+  @media (min-width: $mobile-width-only) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+
+  &--small {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--large {
+    @media (max-width: 769px) {
+      display: none;
+    }
+  }
+}
+
+.catalog__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  @media (min-width: $mobile-width-only) {
+    flex-direction: column;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.catalog__item {
+  background-color: $color-black-pearl-opacity;
+  background: url(../../img/bg-image.png) center no-repeat;
+
+  @media (min-width: $mobile-width-only) {
+    width: 100%;
+    height: 250px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
+    height: 650px;
+  }
+}
+
+// .catalog__card {
+
+// }
+
+.catalog__card-title {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  color: $color-default-white;
+
+  @media (min-width: $mobile-width-only) {
+    padding-top: 50px;
+    padding-left: 40px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-left: 45px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 150px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
