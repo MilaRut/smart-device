@@ -1,5 +1,5 @@
 .intro {
-  background: $gradient-intro, url(../../img/bg-image.jpg) center center no-repeat;
+  background: $gradient-intro, url("./../img/bg-image.jpg") center center no-repeat;
   width: 100%;
 
   @media (min-width: $mobile-width-only) {
@@ -15,7 +15,7 @@
   }
 }
 
-.intro__title {
+.intro h2 {
   margin: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
@@ -40,7 +40,7 @@
   }
 }
 
-.intro__subtitle {
+.intro p {
   margin: 0;
   font-family: "PT Mono", "Courier", monospace;
   font-weight: 400;
@@ -100,7 +100,6 @@
 }
 
 .intro__btn-text {
-
   &--small {
     @media (min-width: $tablet-width) {
       display: none;

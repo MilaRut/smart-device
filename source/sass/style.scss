@@ -6,7 +6,7 @@
 // Global
 // ---------------------------------
 
-@import "variables";
+@import "global/variables";
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
@@ -20,21 +20,13 @@
 @import "blocks/advantages";
 @import "blocks/about-company";
 @import "blocks/catalog";
-
-
-
+@import "blocks/feedback";
 @import "blocks/footer";
 @import "blocks/logos";
 @import "blocks/social";
 @import "blocks/nav";
 @import "blocks/address";
-
-
 @import "blocks/modal";
-
-
-
-
 
 // ---------------------------------
 

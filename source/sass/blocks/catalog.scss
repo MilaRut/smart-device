@@ -69,13 +69,14 @@
   }
 }
 
-.catalog__item {
-  background-color: $color-black-pearl-opacity;
-  background: url(../../img/bg-image.png) center no-repeat;
+.catalog__card {
+  display: block;
+  background: #026593;
 
   @media (min-width: $mobile-width-only) {
     width: 100%;
     height: 250px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $tablet-width) {
@@ -86,12 +87,60 @@
   @media (min-width: $desktop-width) {
     width: 350px;
     height: 650px;
+    margin-bottom: 0;
+  }
+
+  &--first {
+    @media (min-width: $mobile-width-only) {
+      background: url("../../img/card-mob1.jpg") center no-repeat;
+      background-size: cover;
+    }
+
+    @media (min-width: $tablet-width) {
+      background: url("../../img/card-tab1.jpg") center no-repeat;
+      background-size: cover;
+    }
+
+    @media (min-width: $desktop-width) {
+      background: url("../../img/card-desk1.jpg") center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--second {
+    @media (min-width: $mobile-width-only) {
+      background: url("../../img/card-mob2.jpg") center no-repeat;
+      background-size: cover;
+    }
+
+    @media (min-width: $tablet-width) {
+      background: url("../../img/card-tab2.jpg") center no-repeat;
+      background-size: cover;
+    }
+
+    @media (min-width: $desktop-width) {
+      background: url("../../img/card-desk2.jpg") center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--third {
+    @media (min-width: $mobile-width-only) {
+      background: url("../../img/card-mob3.jpg") center no-repeat;
+      background-size: cover;
+    }
+
+    @media (min-width: $tablet-width) {
+      background: url("../../img/card-tab3.jpg") center no-repeat;
+      background-size: cover;
+    }
+
+    @media (min-width: $desktop-width) {
+      background: url("../../img/card-desk3.jpg") center no-repeat;
+      background-size: cover;
+    }
   }
 }
-
-// .catalog__card {
-
-// }
 
 .catalog__card-title {
   margin: 0;
@@ -100,6 +149,7 @@
   color: $color-default-white;
 
   @media (min-width: $mobile-width-only) {
+    max-width: 175px;
     padding-top: 50px;
     padding-left: 40px;
     font-size: 18px;
@@ -107,6 +157,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    max-width: 200px;
     padding-top: 40px;
     padding-left: 45px;
     font-size: 20px;
@@ -114,9 +165,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 200px;
     padding-top: 30px;
     padding-left: 30px;
-    padding-bottom: 150px;
     font-size: 20px;
     line-height: 1.5;
   }

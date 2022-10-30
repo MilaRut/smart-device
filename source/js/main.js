@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {showDescription} from './modules/about-company';
+import {expandContent} from './modules/expand-content';
 import {scrollToSection} from './modules/scroll';
 
 // ---------------------------------
@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  showDescription();
+  expandContent();
   scrollToSection();
 
   // Modules
