@@ -726,9 +726,9 @@ button,
 }
 
 .intro {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))) 0 0 no-repeat, url("../../img/bg-image.jpg") 0 0 no-repeat;
-  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%) 0 0 no-repeat, url("../../img/bg-image.jpg") 0 0 no-repeat;
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%) 0 0 no-repeat, url("../../img/bg-image.jpg") 0 0 no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))) 0 0 no-repeat, url("../img/bg-image.jpg") 0 0 no-repeat;
+  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%) 0 0 no-repeat, url("../img/bg-image.jpg") 0 0 no-repeat;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%) 0 0 no-repeat, url("../img/bg-image.jpg") 0 0 no-repeat;
   background-size: cover;
   width: 100%;
 }
@@ -980,7 +980,7 @@ button,
   height: 60px;
   border-radius: 3px 0 0 0;
   background-color: #00b2ff;
-  background-image: url("../../img/svg/card-arrow-l.svg");
+  background-image: url("../img/svg/card-arrow-l.svg");
   background-position: center;
   background-repeat: no-repeat;
   right: 1px;
@@ -1127,7 +1127,7 @@ button,
 }
 
 .feedback input[type=checkbox]:checked + label::before {
-  background: url("../../img/svg/checkbox-mark-l.svg") center no-repeat;
+  background: url("../img/svg/checkbox-mark-l.svg") center no-repeat;
 }
 
 .feedback label[for=feedback-agreement] {
@@ -1438,7 +1438,7 @@ a.address__item.focus-visible:focus {
 }
 
 .modal input[type=checkbox]:checked + label::before {
-  background: url("../../img/svg/checkbox-mark-l.svg") center no-repeat;
+  background: url("../img/svg/checkbox-mark-l.svg") center no-repeat;
 }
 
 .modal label[for=modal-agreement] {
@@ -1539,7 +1539,7 @@ a.address__item.focus-visible:focus {
   }
 
   .about-company .container {
-    background-image: url("../../img/img-2022.png");
+    background-image: url("../img/img-2022.png");
     background-repeat: no-repeat;
     background-position: 4.35% 13.7%;
   }
@@ -1555,7 +1555,7 @@ a.address__item.focus-visible:focus {
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 768px) and (min-resolution: 2dppx) {
   .about-company .container {
-    background-image: url("../../img/img-2022@2x.png");
+    background-image: url("../img/img-2022@2x.png");
     background-size: 148px 320px;
   }
 }
@@ -1566,22 +1566,22 @@ a.address__item.focus-visible:focus {
   }
 
   .catalog__card--first {
-    background: url("../../img/card-desk1.jpg") center no-repeat;
+    background: url("../img/card-desk1.jpg") center no-repeat;
     background-size: cover;
   }
 
   .catalog__card--second {
-    background: url("../../img/card-desk2.jpg") center no-repeat;
+    background: url("../img/card-desk2.jpg") center no-repeat;
     background-size: cover;
   }
 
   .catalog__card--third {
-    background: url("../../img/card-desk3.jpg") center no-repeat;
+    background: url("../img/card-desk3.jpg") center no-repeat;
     background-size: cover;
   }
 
   .feedback .container {
-    background: url("../../img/paper-airplane.png") 6.3% 44.3% no-repeat;
+    background: url("../img/paper-airplane.png") 6.3% 44.3% no-repeat;
   }
 
   .nav__list {
@@ -1591,19 +1591,19 @@ a.address__item.focus-visible:focus {
 
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1024px) and (min-resolution: 2dppx) {
   .catalog__card--first {
-    background-image: url("../../img/card-desk1@2x.jpg");
+    background-image: url("../img/card-desk1@2x.jpg");
   }
 
   .catalog__card--second {
-    background-image: url("../../img/card-desk2@2x.jpg");
+    background-image: url("../img/card-desk2@2x.jpg");
   }
 
   .catalog__card--third {
-    background-image: url("../../img/card-desk3@2x.jpg");
+    background-image: url("../img/card-desk3@2x.jpg");
   }
 
   .feedback .container {
-    background: url("../../img/paper-airplane@2x.png") 6.3% 44.3% no-repeat;
+    background: url("../img/paper-airplane@2x.png") 6.3% 44.3% no-repeat;
     background-size: 38.4%;
   }
 }
@@ -1782,17 +1782,17 @@ a.address__item.focus-visible:focus {
   }
 
   .catalog__card--first {
-    background: url("../../img/card-tab1.jpg") center no-repeat;
+    background: url("../img/card-tab1.jpg") center no-repeat;
     background-size: cover;
   }
 
   .catalog__card--second {
-    background: url("../../img/card-tab2.jpg") center no-repeat;
+    background: url("../img/card-tab2.jpg") center no-repeat;
     background-size: cover;
   }
 
   .catalog__card--third {
-    background: url("../../img/card-tab3.jpg") center no-repeat;
+    background: url("../img/card-tab3.jpg") center no-repeat;
     background-size: cover;
   }
 
@@ -1904,15 +1904,15 @@ a.address__item.focus-visible:focus {
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
   .catalog__card--first {
-    background-image: url("../../img/card-tab1@2x.jpg");
+    background-image: url("../img/card-tab1@2x.jpg");
   }
 
   .catalog__card--second {
-    background-image: url("../../img/card-tab2@2x.jpg");
+    background-image: url("../img/card-tab2@2x.jpg");
   }
 
   .catalog__card--third {
-    background-image: url("../../img/card-tab3@2x.jpg");
+    background-image: url("../img/card-tab3@2x.jpg");
   }
 }
 
@@ -2067,17 +2067,17 @@ a.address__item.focus-visible:focus {
   }
 
   .catalog__card--first {
-    background: url("../../img/card-mob1.jpg") center no-repeat;
+    background: url("../img/card-mob1.jpg") center no-repeat;
     background-size: cover;
   }
 
   .catalog__card--second {
-    background: url("../../img/card-mob2.jpg") center no-repeat;
+    background: url("../img/card-mob2.jpg") center no-repeat;
     background-size: cover;
   }
 
   .catalog__card--third {
-    background: url("../../img/card-mob3.jpg") center no-repeat;
+    background: url("../img/card-mob3.jpg") center no-repeat;
     background-size: cover;
   }
 
@@ -2086,7 +2086,7 @@ a.address__item.focus-visible:focus {
     height: 40px;
     right: 0;
     bottom: 0;
-    background-image: url("../../img/svg/card-arrow-s.svg");
+    background-image: url("../img/svg/card-arrow-s.svg");
   }
 
   .catalog__card-title {
@@ -2144,7 +2144,7 @@ a.address__item.focus-visible:focus {
   }
 
   .feedback input[type=checkbox]:checked + label::before {
-    background: url("../../img/svg/checkbox-mark-s.svg") center no-repeat;
+    background: url("../img/svg/checkbox-mark-s.svg") center no-repeat;
   }
 
   .feedback label[for=feedback-agreement] {
@@ -2300,15 +2300,15 @@ a.address__item.focus-visible:focus {
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
   .catalog__card--first {
-    background-image: url("../../img/card-mob1@2x.jpg");
+    background-image: url("../img/card-mob1@2x.jpg");
   }
 
   .catalog__card--second {
-    background-image: url("../../img/card-mob2@2x.jpg");
+    background-image: url("../img/card-mob2@2x.jpg");
   }
 
   .catalog__card--third {
-    background-image: url("../../img/card-mob3@2x.jpg");
+    background-image: url("../img/card-mob3@2x.jpg");
   }
 }
 
@@ -2366,9 +2366,9 @@ a.address__item.focus-visible:focus {
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   .intro {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))) 0 0 no-repeat, url("../../img/bg-image@2x.jpg") 0 0 no-repeat;
-    background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%) 0 0 no-repeat, url("../../img/bg-image@2x.jpg") 0 0 no-repeat;
-    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%) 0 0 no-repeat, url("../../img/bg-image@2x.jpg") 0 0 no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))) 0 0 no-repeat, url("../img/bg-image@2x.jpg") 0 0 no-repeat;
+    background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%) 0 0 no-repeat, url("../img/bg-image@2x.jpg") 0 0 no-repeat;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%) 0 0 no-repeat, url("../img/bg-image@2x.jpg") 0 0 no-repeat;
     background-size: cover;
   }
 }

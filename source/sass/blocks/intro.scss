@@ -1,10 +1,10 @@
 .intro {
-  background: $gradient-intro 0 0 no-repeat, url("../../img/bg-image.jpg") 0 0 no-repeat;
+  background: $gradient-intro 0 0 no-repeat, url("../img/bg-image.jpg") 0 0 no-repeat;
   background-size: cover;
   width: 100%;
 
   @media (min-resolution: 2dppx) {
-    background: $gradient-intro 0 0 no-repeat, url("../../img/bg-image@2x.jpg") 0 0 no-repeat;
+    background: $gradient-intro 0 0 no-repeat, url("../img/bg-image@2x.jpg") 0 0 no-repeat;
     background-size: cover;
   }
 

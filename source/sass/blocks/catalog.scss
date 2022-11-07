@@ -101,87 +101,87 @@
 
   @media (min-width: $vp-1024) {
     &--first {
-      background: url("../../img/card-desk1.jpg") center no-repeat;
+      background: url("../img/card-desk1.jpg") center no-repeat;
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/card-desk1@2x.jpg");
+        background-image: url("../img/card-desk1@2x.jpg");
       }
     }
 
     &--second {
-      background: url("../../img/card-desk2.jpg") center no-repeat;
+      background: url("../img/card-desk2.jpg") center no-repeat;
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/card-desk2@2x.jpg");
+        background-image: url("../img/card-desk2@2x.jpg");
       }
     }
 
     &--third {
-      background: url("../../img/card-desk3.jpg") center no-repeat;
+      background: url("../img/card-desk3.jpg") center no-repeat;
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/card-desk3@2x.jpg");
+        background-image: url("../img/card-desk3@2x.jpg");
       }
     }
   }
 
   @media (max-width: $vp-1023) {
     &--first {
-      background: url("../../img/card-tab1.jpg") center no-repeat;
+      background: url("../img/card-tab1.jpg") center no-repeat;
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/card-tab1@2x.jpg");
+        background-image: url("../img/card-tab1@2x.jpg");
       }
     }
 
     &--second {
-      background: url("../../img/card-tab2.jpg") center no-repeat;
+      background: url("../img/card-tab2.jpg") center no-repeat;
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/card-tab2@2x.jpg");
+        background-image: url("../img/card-tab2@2x.jpg");
       }
     }
 
     &--third {
-      background: url("../../img/card-tab3.jpg") center no-repeat;
+      background: url("../img/card-tab3.jpg") center no-repeat;
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/card-tab3@2x.jpg");
+        background-image: url("../img/card-tab3@2x.jpg");
       }
     }
   }
 
   @media (max-width: $vp-767) {
     &--first {
-      background: url("../../img/card-mob1.jpg") center no-repeat;
+      background: url("../img/card-mob1.jpg") center no-repeat;
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/card-mob1@2x.jpg");
+        background-image: url("../img/card-mob1@2x.jpg");
       }
     }
 
     &--second {
-      background: url("../../img/card-mob2.jpg") center no-repeat;
+      background: url("../img/card-mob2.jpg") center no-repeat;
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/card-mob2@2x.jpg");
+        background-image: url("../img/card-mob2@2x.jpg");
       }
     }
 
     &--third {
-      background: url("../../img/card-mob3.jpg") center no-repeat;
+      background: url("../img/card-mob3.jpg") center no-repeat;
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/card-mob3@2x.jpg");
+        background-image: url("../img/card-mob3@2x.jpg");
       }
     }
   }
@@ -198,7 +198,7 @@
   height: 60px;
   border-radius: 3px 0 0 0;
   background-color: $color-deepsky-blue1;
-  background-image: url("../../img/svg/card-arrow-l.svg");
+  background-image: url("../img/svg/card-arrow-l.svg");
   background-position: center;
   background-repeat: no-repeat;
   right: 1px;
@@ -210,7 +210,7 @@
     height: 40px;
     right: 0;
     bottom: 0;
-    background-image: url("../../img/svg/card-arrow-s.svg");
+    background-image: url("../img/svg/card-arrow-s.svg");
   }
 }
 

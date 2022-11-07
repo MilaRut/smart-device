@@ -6,12 +6,12 @@
   padding: 17px 40px 31px 50px;
 
   @media (min-width: $vp-768) {
-    background-image: url("../../img/img-2022.png");
+    background-image: url("../img/img-2022.png");
     background-repeat: no-repeat;
     background-position: 4.35% 13.7%;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/img-2022@2x.png");
+      background-image: url("../img/img-2022@2x.png");
       background-size: 148px 320px;
 
       @media (max-width: $vp-1023) {
