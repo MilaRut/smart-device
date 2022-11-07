@@ -1,3 +1,262 @@
 .feedback {
   display: flex;
+  position: relative;
+  background: $gradient-feedback, $color-deepsky-blue2;
+  color: $color-default-white;
+
+
+  @media (max-width: $vp-1023) {
+    background: $color-deepsky-blue2;
+  }
+}
+
+.feedback .container {
+  padding-top: 166px;
+  padding-bottom: 249px;
+
+  @media (min-width: $vp-1024) {
+    background: url("../../img/paper-airplane.png") 6.3% 44.3% no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/paper-airplane@2x.png") 6.3% 44.3% no-repeat;
+      background-size: 38.4%;
+    }
+  }
+
+  @media (max-width: $vp-1023) {
+    padding-top: 46px;
+    padding-bottom: 125px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 47px;
+    padding-bottom: 85px;
+  }
+}
+
+.feedback__wrapper {
+  width: 587px;
+  margin-left: auto;
+  margin-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (max-width: $vp-1023) {
+    width: 100%;
+    margin: 0;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-bottom: 0;
+  }
+}
+
+.feedback h2 {
+  margin: 0;
+  margin-bottom: 12px;
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.41;
+
+  @media (max-width: $vp-1023) {
+    margin-bottom: 6px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+}
+
+.feedback p {
+  margin: 0;
+  margin-bottom: 35px;
+  padding-left: 5px;
+  font-family: $ff-ptmono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
+
+  @media (max-width: $vp-1023) {
+    margin-bottom: 25px;
+    padding-left: 0;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 14px;
+    line-height: 1.34;
+    margin-bottom: 33px;
+  }
+}
+
+.feedback form {
+  padding-left: 5px;
+
+  @media (max-width: $vp-1023) {
+    padding-left: 0;
+  }
+}
+
+.feedback fieldset {
+  position: relative;
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: $vp-1023) {
+    padding: 0;
+  }
+}
+
+.feedback input {
+  margin-bottom: 20px;
+  padding: 13px 0 15px 15px;
+  background-color: $color-black-pearl-opacity2;
+  border: none;
+  border-radius: 3px;
+  font-family: $ff-ptmono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
+  width: 47.4%;
+  color: $color-default-white;
+
+  @media (max-width: $vp-1024) {
+    width: 48%;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 100%;
+  }
+}
+
+.feedback textarea {
+  margin-bottom: 37px;
+  padding: 25px 0 92px 15px;
+  background-color: $color-black-pearl-opacity2;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  color: $color-default-white;
+
+  @media (max-width: $vp-1023) {
+    padding: 31px 0 86px 15px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 25px 0 120px 15px;
+    margin-bottom: 30px;
+  }
+}
+
+.feedback__submit-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-width: 265px;
+
+  @media (max-width: $vp-767) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.feedback button {
+  min-width: 265px;
+  min-height: 44px;
+  background-color: $color-black-pearl2;
+  border: none;
+  font-size: 16px;
+  line-height: 1.18;
+  color: $color-default-white;
+
+  @media (max-width: $vp-1023) {
+    padding-top: 12px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 100%;
+    margin-bottom: 25px;
+    padding-top: 5px;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}
+
+.feedback input[type="checkbox"] {
+  position: absolute;
+  top: 27px;
+  left: 8px;
+  width: 1px;
+
+  &:checked + label::before {
+    background: url("../../img/svg/checkbox-mark-l.svg") center no-repeat;
+
+    @media (max-width: $vp-767) {
+      background: url("../../img/svg/checkbox-mark-s.svg") center no-repeat;
+    }
+  }
+}
+
+.feedback label[for="feedback-agreement"] {
+  position: relative;
+  font-family: $ff-ptmono;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  opacity: 0.8;
+  padding-left: 25px;
+  margin-right: 5px;
+  max-width: 260px;
+  cursor: pointer;
+
+  @media (max-width: $vp-1023) {
+    margin-right: 60px;
+    margin-bottom: 3px;
+  }
+
+  @media (max-width: $vp-767) {
+    max-width: 100%;
+    margin-right: 0;
+    padding-left: 31px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 1px solid $color-default-white;
+    border-radius: 2px;
+    left: 0;
+    top: 9px;
+
+    @media (max-width: $vp-1023) {
+      left: -1px;
+      top: 7px;
+    }
+
+    @media (max-width: $vp-767) {
+      left: 5px;
+      top: 7px;
+    }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+input[type="checkbox"]:focus + label {
+  box-shadow: 0 0 0 3px $color-default-white;
+  border-radius: 3px;
 }

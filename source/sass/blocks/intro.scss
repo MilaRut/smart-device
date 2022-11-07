@@ -1,113 +1,126 @@
 .intro {
-  background: $gradient-intro, url("./../img/bg-image.jpg") center center no-repeat;
+  background: $gradient-intro 0 0 no-repeat, url("../../img/bg-image.jpg") 0 0 no-repeat;
+  background-size: cover;
   width: 100%;
 
-  @media (min-width: $mobile-width-only) {
-    padding-top: 150px;
+  @media (min-resolution: 2dppx) {
+    background: $gradient-intro 0 0 no-repeat, url("../../img/bg-image@2x.jpg") 0 0 no-repeat;
+    background-size: cover;
   }
 
-  @media (min-width: $tablet-width) {
-    padding-top: 180px;
+  @media (max-width: $vp-1023) {
+    margin-top: -15px;
+    background-position: 20% 100%;
+    background-repeat: no-repeat;
+    background-size: 181%;
   }
 
-  @media (min-width: $desktop-width) {
-    padding-top: 307px;
+  @media (max-width: $vp-767) {
+    margin-top: -15px;
+    background-position: -230px -55px;
+    background-size: 382%;
+  }
+}
+
+.intro .container {
+  padding: 303px 50px 0 175px;
+
+  @media (max-width: $vp-1023) {
+    padding: 95px 50px 0;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 95px 25px 0;
   }
 }
 
 .intro h2 {
   margin: 0;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-family: $ff-roboto;
   font-weight: 700;
   letter-spacing: 0.07em;
   line-height: 1.17;
   text-transform: uppercase;
   color: $color-alice-blue3;
+  font-size: 80px;
+  margin-bottom: 34px;
 
-  @media (min-width: $mobile-width-only) {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-
-  @media (min-width: $tablet-width) {
+  @media (max-width: $vp-1023) {
     font-size: 64px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 
-  @media (min-width: $desktop-width) {
-    font-size: 80px;
-    margin-bottom: 40px;
+  @media (max-width: $vp-767) {
+    font-size: 36px;
+    margin-bottom: 6px;
+    line-height: 1.19;
   }
 }
 
 .intro p {
   margin: 0;
-  font-family: "PT Mono", "Courier", monospace;
+  font-family: $ff-ptmono;
   font-weight: 400;
+  font-size: 22px;
   line-height: 1.55;
   color: $color-alice-blue3;
+  max-width: 650px;
+  margin-bottom: 46px;
 
-  @media (min-width: $mobile-width-only) {
+  @media (max-width: $vp-1023) {
     max-width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 57px;
+  }
+
+  @media (max-width: $vp-767) {
+    max-width: 100%;
+    margin-bottom: 44px;
     font-size: 14px;
-  }
-
-  @media (min-width: $tablet-width) {
-    max-width: 100%;
-    margin-bottom: 50px;
-    font-size: 22px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 56%;
-    margin-bottom: 40px;
+    line-height: 1.6;
   }
 }
 
 .intro__button {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 279px;
   background-color: $color-deepsky-blue1;
   border: none;
-  border-radius: 3px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 700;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1.16;
+  padding: 17px 27px;
   color: $color-alice-blue3;
-  cursor: pointer;
+  box-sizing: content-box;
 
-  @media (min-width: $mobile-width-only) {
+  @media (max-width: $vp-1023) {
+    margin-bottom: 205px;
+    margin-left: 45px;
+  }
+
+  @media (max-width: $vp-767) {
     font-size: 14px;
     line-height: 1.14;
-    padding: 10px 30px;
+    padding: 12px 37px;
     margin-bottom: 190px;
+    margin-left: 0;
+    min-width: 100%;
+    box-sizing: border-box;
   }
 
-  @media (min-width: $tablet-width) {
-    font-size: 18px;
-    line-height: 1.16;
-    padding: 15px 25px;
-    margin-bottom: 205px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
-    line-height: 1.16;
-    padding: 15px 25px;
-    margin-bottom: 280px;
+  @include hover-focus {
+    opacity: 0.8;
   }
 }
 
 .intro__btn-text {
   &--small {
-    @media (min-width: $tablet-width) {
+    @media (min-width: $vp-768) {
       display: none;
     }
   }
 
   &--large {
-    @media (max-width: 769px) {
+    @media (max-width: $vp-767) {
       display: none;
     }
   }

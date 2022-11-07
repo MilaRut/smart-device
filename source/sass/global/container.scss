@@ -1,16 +1,19 @@
 .container {
-  width: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 50px;
+  max-width: 1322px;
+  width: 100%;
 
-  @media (min-width: $mobile-width-only) {
-    max-width: 84%;
+  @media (max-width: $vp-1023) {
+    padding: 0 49px;
+    max-width: 1023px;
+    width: 100%;
   }
 
-  @media (min-width: $tablet-width) {
-    max-width: 87%;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 64%;
+  @media (max-width: $vp-767) {
+    padding: 0 25px;
+    min-width: 320px;
+    max-width: 100%;
   }
 }

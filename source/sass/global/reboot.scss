@@ -31,20 +31,6 @@ body {
   color: $color-default-white;
 }
 
-.wrapper {
-  @media (min-width: $desktop-width) {
-    max-width: 1920px;
-  }
-
-  @media (max-width: $tablet-width) {
-    max-width: 770px;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    max-width: 320px;
-  }
-}
-
 a {
   text-decoration: none;
   color: $color-default-white;
@@ -53,7 +39,7 @@ a {
 img,
 video {
   display: block;
-  // max-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -79,7 +65,7 @@ textarea {
   border-radius: 0;
 
   &::placeholder {
-    opacity: 1;
+    opacity: 0.6;
   }
 
   &:invalid {
@@ -137,4 +123,20 @@ button,
 [type="reset"],
 [type="submit"] {
   appearance: none;
+}
+
+::-webkit-input-placeholder {
+  color: $color-default-white;
+}
+
+:-moz-placeholder {
+  color: $color-default-white;
+}
+
+::-moz-placeholder {
+  color: $color-default-white;
+}
+
+:-ms-input-placeholder {
+  color: $color-default-white;
 }

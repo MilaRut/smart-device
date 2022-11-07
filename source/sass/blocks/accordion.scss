@@ -1,0 +1,70 @@
+.accordion {
+  position: relative;
+
+  @media (max-width: $vp-767) {
+    cursor: pointer;
+  }
+}
+
+.accordion__btn {
+  @media (min-width: $vp-768) {
+    display: none;
+  }
+
+  @media (max-width: $vp-767) {
+    position: absolute;
+    width: 100%;
+    height: 61px;
+    top: 0;
+    background-color: $color-transparent;
+    border: none;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      top: 48%;
+      right: 26px;
+      width: 15px;
+      height: 1px;
+      background-color: $color-alice-blue-opacity;
+      font-weight: 700;
+    }
+
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.accordion__btn.open {
+  @media (max-width: $vp-767) {
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.accordion__btn.no-js {
+  &::after,
+  &::before {
+    width: 0;
+    height: 0;
+  }
+}
+
+.accordion__body {
+  @media (max-width: $vp-767) {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+}
+
+.accordion__body.no-js {
+  @media (max-width: $vp-767) {
+    max-height: 100%;
+    overflow: hidden;
+  }
+}

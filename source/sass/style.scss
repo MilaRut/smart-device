@@ -11,6 +11,9 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+@import "global/button";
+@import "global/mixins";
+
 
 // Blocks
 // ---------------------------------
@@ -23,9 +26,9 @@
 @import "blocks/feedback";
 @import "blocks/footer";
 @import "blocks/logos";
-@import "blocks/social";
 @import "blocks/nav";
 @import "blocks/address";
+@import "blocks/accordion";
 @import "blocks/modal";
 
 // ---------------------------------

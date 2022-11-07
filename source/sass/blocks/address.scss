@@ -1,23 +1,50 @@
+.address {
+  margin-right: 38px;
+
+  @media (max-width: $vp-1023) {
+    margin-right: 14px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-right: 0;
+    width: 100%;
+    border-bottom: 1px solid $color-alice-blue-opacity;
+  }
+}
+
 .address__list {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $vp-767) {
+    padding: 0 25px;
+    margin-bottom: 2px;
+  }
 }
 
 .address__item {
-  font-family: "PT Mono", "Courier", monospace;
+  font-family: $ff-ptmono;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.35;
   color: rgba(255, 255, 255, 0.7);
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 
-  @media (min-width: $mobile-width-only) and (max-width: 769px) {
+  @media (max-width: $vp-767) {
     font-size: 14px;
+    margin-bottom: 12px;
 
     &:first-child {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
+      opacity: 1;
     }
+  }
+}
+
+a.address__item {
+  @include hover-focus {
+    opacity: 0.6;
   }
 }

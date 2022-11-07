@@ -1,0 +1,11 @@
+@mixin hover-focus {
+  @media (hover: hover) {
+    &:hover:not(.focus-visible) {
+      @content;
+    }
+  }
+
+  &.focus-visible:focus {
+    @content;
+  }
+}

@@ -1,60 +1,96 @@
 .about-company {
   background-color: $color-alice-blue2;
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../../img/img-2022.png");
-    background-repeat: no-repeat;
-    background-position-x: 4%;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-position-x: 18%;
-  }
 }
 
 .about-company .container {
-  @media (min-width: $mobile-width-only) {
-    padding-left: 0;
+  padding: 17px 40px 31px 50px;
+
+  @media (min-width: $vp-768) {
+    background-image: url("../../img/img-2022.png");
+    background-repeat: no-repeat;
+    background-position: 4.35% 13.7%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/img-2022@2x.png");
+      background-size: 148px 320px;
+
+      @media (max-width: $vp-1023) {
+        background-size: 150px 321px;
+      }
+    }
   }
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: $vp-1023) {
+    padding: 0 50px;
+    padding-bottom: 20px;
+    background-position: 46px 4px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 0 25px;
+    padding-bottom: 20px;
+  }
+}
+
+.about-company__content {
+  margin-bottom: 43px;
+  padding-left: 252px;
+
+  @media (max-width: $vp-1023) {
+    margin-bottom: 10px;
     padding-left: 175px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding-left: 250px;
+  @media (max-width: $vp-767) {
+    margin-bottom: 0;
+    padding-left: 0;
   }
 }
 
 .about-company h2 {
   margin: 0;
-  margin-bottom: 15px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+  margin-bottom: 13px;
+  font-family: $ff-roboto;
   font-weight: 400;
   line-height: 1.4;
   color: $color-black-pearl1;
+  font-size: 36px;
 
-  @media (min-width: $mobile-width-only) {
+  @media (max-width: $vp-1023) {
+    margin-bottom: 8px;
+  }
+
+  @media (max-width: $vp-767) {
     font-size: 28px;
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 36px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 36px;
+    margin-bottom: 7px;
   }
 }
 
 .about-company p {
   margin: 0;
-  font-family: "PT Mono", "Courier", monospace;
+  margin-bottom: 23px;
+  font-family: $ff-ptmono;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.3;
   color: $color-black-pearl1;
-  margin-bottom: 20px;
+
+  @media (max-width: $vp-1023) {
+    padding-top: 6px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 13px;
+    font-size: 14px;
+    line-height: 1.34;
+  }
+}
+
+.about-company span {
+  @media (max-width: $vp-767) {
+    display: none;
+  }
 }
 
 .about-company__wrapper.is-hidden {
@@ -62,34 +98,36 @@
 }
 
 .about-company__button {
+  min-width: 180px;
+  margin-left: 252px;
+  margin-bottom: 90px;
+  padding: 14px 13px 13px;
   background-color: transparent;
   border: 1px solid $color-deepsky-blue1;
-  border-radius: 3px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
   color: $color-deepsky-blue1;
-  cursor: pointer;
 
-  @media (min-width: $mobile-width-only) {
+  @media (max-width: $vp-1023) {
+    margin-left: 175px;
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-left: 0;
     min-width: 160px;
-    padding: 14px 13px 8px;
-    margin-bottom: 80px;
+    padding: 9px 13px;
   }
 
-  @media (min-width: $tablet-width) {
-    min-width: 180px;
-    padding: 14px 13px 8px;
-    margin-bottom: 120px;
+  @include hover-focus {
+    opacity: 0.5;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    min-width: 180px;
-    padding: 14px 13px 8px;
-    margin-bottom: 120px;
-  }
+.about-company__button.no-js {
+  display: none;
+}
+
+.about-company__wrapper.no-js {
+  display: block;
 }

@@ -2,6 +2,10 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {expandContent} from './modules/expand-content';
 import {scrollToSection} from './modules/scroll';
+import {openModal, closeModal} from './modules/modals/modal';
+import {initAccordion} from './modules/accordion';
+import {initPhoneMask} from './modules/mask';
+import {validateForm} from './modules/validation';
 
 // ---------------------------------
 
@@ -13,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   expandContent();
   scrollToSection();
+  initAccordion();
 
   // Modules
   // ---------------------------------
@@ -21,6 +26,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+    openModal();
+    closeModal();
+    initPhoneMask();
+    validateForm();
   });
 });
 

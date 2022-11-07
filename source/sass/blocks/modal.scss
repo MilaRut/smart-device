@@ -4,27 +4,147 @@
   width: 100%;
   height: 100%;
   display: flex;
+  top: 0;
+  left: 0;
   background-color: rgba(3, 16, 27, 0.7);
+  overflow: scroll;
 }
 
-.modal .is-closed {
+.modal.is-closed {
   display: none;
 }
 
-.modal-wrapper {
-  width: 500px;
+.modal__wrapper {
+  position: relative;
+  max-width: 500px;
   background-color: $color-deepsky-blue2;
   margin: auto;
-  padding: 40px;
+  padding: 37px 40px 42px;
   box-sizing: border-box;
   border-radius: 3px;
 }
 
-.modal__title {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+.modal__close-btn {
+  position: absolute;
+  top: 24px;
+  right: 19px;
+  background-color: transparent;
+  border: none;
+  padding: 5px 7px;
+  cursor: pointer;
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}
+
+.modal h4 {
+  margin: 0;
+  font-family: $ff-roboto;
   font-weight: 400;
   font-size: 30px;
   line-height: 1.4;
   color: $color-default-white;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+}
+
+.modal p {
+  margin: 0;
+  margin-bottom: 36px;
+  max-width: 380px;
+  font-size: 16px;
+  line-height: 1.37;
+}
+
+.modal fieldset {
+  position: relative;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal input {
+  margin-bottom: 18px;
+  padding: 15px 0 15px 15px;
+  background-color: $color-black-pearl-opacity2;
+  border: none;
+  border-radius: 3px;
+  font-family: $ff-ptmono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
+  width: 100%;
+  color: $color-default-white;
+}
+
+.modal textarea {
+  margin-bottom: 20px;
+  padding: 25px 0 3px 15px;
+  background-color: $color-black-pearl-opacity2;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  color: $color-default-white;
+}
+
+
+.modal input[type="checkbox"] {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  width: 1px;
+
+  &:checked + label::before {
+    background: url("../../img/svg/checkbox-mark-l.svg") center no-repeat;
+  }
+}
+
+.modal label[for="modal-agreement"] {
+  position: relative;
+  font-family: $ff-ptmono;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  opacity: 0.8;
+  padding-left: 36px;
+  margin-right: 5px;
+  max-width: 260px;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 9px;
+    top: -1px;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 1px solid $color-default-white;
+    border-radius: 2px;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 3px #83b3d3;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.modal__submit-button {
+  background-color: $color-black-pearl2;
+  color: $color-default-white;
+  border: none;
+  width: 100%;
+  min-height: 45px;
+  font-size: 16px;
+  line-height: 1.18;
+  padding-top: 7px;
+  margin-bottom: 19px;
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
 }

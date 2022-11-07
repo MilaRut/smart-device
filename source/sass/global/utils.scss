@@ -1,12 +1,12 @@
 .wrapper {
   position: relative;
   margin: 0 auto;
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
+  background-color: $color-black-pearl1;
 
   .header,
   .footer {
@@ -29,4 +29,9 @@
   border: 0;
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
+}
+
+.body.modal-opened {
+  position: fixed;
+  overflow-y: scroll;
 }

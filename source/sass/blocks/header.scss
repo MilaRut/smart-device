@@ -1,108 +1,125 @@
 .header {
   width: 100%;
-  max-width: 1920px;
+  min-height: 120px;
+  margin: 0 auto;
   background: $black-to-bottom;
-  position: fixed;
   display: flex;
   align-items: center;
   z-index: 10;
 
-  @media (min-width: $mobile-width-only) {
-    min-height: 70px;
+  @media (min-width: $vp-1024) {
+    position: fixed;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: $vp-1023) {
     min-height: 100px;
   }
 
-  @media (min-width: $desktop-width) {
-    min-height: 120px;
+  @media (max-width: $vp-767) {
+    min-height: 70px;
   }
 }
 
 .header .container {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 6px;
+
+  @media (max-width: $vp-767) {
+    padding-right: 15px;
+  }
 }
 
 .header__logo {
-  @media (min-width: $mobile-width-only) {
-    margin-right: 124px;
-  }
+  margin-right: auto;
+  padding-left: 2px;
 
-  @media (min-width: $tablet-width) {
-    margin-right: 335px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 160px;
+  @media (max-width: $vp-1023) {
+    padding-left: 1px;
   }
 }
 
 .header__logo-image {
-  @media (max-width: 769px) {
+  width: 215px;
+
+  @media (max-width: $vp-767) {
     max-width: 35px;
     max-height: 35px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 215px;
-    margin-right: 160px;
   }
 }
 
 .header__link {
   display: flex;
   align-items: center;
-  font-family: "PT Mono", "Courier", monospace;
+  font-family: $ff-ptmono;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.1;
   color: $color-alice-blue1;
   padding: 10px;
+  padding-bottom: 14px;
 
-  &--email {
-    margin-right: 15px;
-
-    @media (min-width: $desktop-width) {
-      margin-right: 30px;
-    }
+  @media (max-width: $vp-1023) {
+    padding-bottom: 25px;
+    margin-right: 20px;
   }
 
-  &--phone {
-    @media (min-width: $desktop-width) {
-      margin-right: 110px;
-    }
+  @media (max-width: $vp-767) {
+    padding-bottom: 14px;
+    margin-right: 20px;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
   }
 }
 
 .header__link-text {
-  display: none;
+  display: inline-block;
+  vertical-align: baseline;
+  padding-left: 15px;
 
-  @media (min-width: $desktop-width) {
-    display: inline-block;
-    padding-left: 15px;
+  @media (max-width: $vp-1023) {
+    display: none;
+  }
+
+  .header__link--phone & {
+    margin-right: 155px;
+
+    @media (max-width: $vp-1240) {
+      margin-right: 0;
+    }
+  }
+
+  .header__link--email & {
+    margin-right: 100px;
+
+    @media (max-width: $vp-1240) {
+      margin-right: 0;
+    }
   }
 }
 
 .header__button {
-  display: none;
-  cursor: pointer;
+  display: block;
+  min-width: 160px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid $color-alice-blue1;
+  font-size: 14px;
+  color: $color-alice-blue1;
+  line-height: 1.14;
+  margin-right: 61px;
+  margin-bottom: 5px;
+  padding: 10px 0;
 
-  @media (min-width: $desktop-width) {
-    display: block;
-    min-width: 160px;
-    height: 40px;
-    background-color: transparent;
-    border: 1px solid $color-alice-blue1;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    color: $color-alice-blue1;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1.14;
-    letter-spacing: 0.05em;
+  @media (max-width: $vp-1023) {
+    display: none;
+    margin-right: 0;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
   }
 }
