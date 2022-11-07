@@ -22,6 +22,7 @@
   }
 }
 
+.address__list p,
 .address__item {
   font-family: $ff-ptmono;
   font-style: normal;
@@ -43,7 +44,7 @@
   }
 }
 
-a.address__item {
+.address__item {
   @include hover-focus {
     opacity: 0.6;
   }

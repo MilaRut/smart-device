@@ -113,13 +113,13 @@
 }
 
 .intro__btn-text {
-  &--small {
+  &--small span {
     @media (min-width: $vp-768) {
       display: none;
     }
   }
 
-  &--large {
+  &--large span {
     @media (max-width: $vp-767) {
       display: none;
     }

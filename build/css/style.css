@@ -608,11 +608,6 @@ button,
   clip-path: inset(100%);
 }
 
-.body.modal-opened {
-  position: fixed;
-  overflow-y: scroll;
-}
-
 .container {
   margin: 0 auto;
   -webkit-box-sizing: border-box;
@@ -693,17 +688,17 @@ button,
   opacity: 0.8;
 }
 
-.header__link-text {
+.header__link span {
   display: inline-block;
   vertical-align: baseline;
   padding-left: 15px;
 }
 
-.header__link--phone .header__link-text {
+.header__link--phone span {
   margin-right: 155px;
 }
 
-.header__link--email .header__link-text {
+.header__link--email span {
   margin-right: 100px;
 }
 
@@ -926,7 +921,7 @@ button,
   padding-bottom: 121px;
 }
 
-.catalog__title {
+.catalog__title h2 {
   margin: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
@@ -988,7 +983,7 @@ button,
   cursor: pointer;
 }
 
-.catalog__card-title {
+.catalog__card p {
   max-width: 200px;
   margin: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1313,6 +1308,7 @@ input[type=checkbox]:focus + label {
   flex-direction: column;
 }
 
+.address__list p,
 .address__item {
   font-family: "PT Mono", "Courier", monospace;
   font-style: normal;
@@ -1324,7 +1320,7 @@ input[type=checkbox]:focus + label {
   margin-bottom: 8px;
 }
 
-a.address__item.focus-visible:focus {
+.address__item.focus-visible:focus {
   opacity: 0.6;
 }
 
@@ -1365,20 +1361,6 @@ a.address__item.focus-visible:focus {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 3px;
-}
-
-.modal__close-btn {
-  position: absolute;
-  top: 24px;
-  right: 19px;
-  background-color: transparent;
-  border: none;
-  padding: 5px 7px;
-  cursor: pointer;
-}
-
-.modal__close-btn.focus-visible:focus {
-  opacity: 0.8;
 }
 
 .modal h4 {
@@ -1492,6 +1474,24 @@ a.address__item.focus-visible:focus {
   opacity: 0.8;
 }
 
+.modal__close-btn {
+  position: absolute;
+  top: 24px;
+  right: 19px;
+  background-color: transparent;
+  border: none;
+  padding: 5px 7px;
+  cursor: pointer;
+}
+
+.modal__close-btn.focus-visible:focus {
+  opacity: 0.8;
+}
+
+.modal__close-btn-icon {
+  pointer-events: none;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1534,7 +1534,7 @@ a.address__item.focus-visible:focus {
 */
 
 @media (min-width: 768px) {
-  .intro__btn-text--small {
+  .intro__btn-text--small span {
     display: none;
   }
 
@@ -1544,7 +1544,7 @@ a.address__item.focus-visible:focus {
     background-position: 4.35% 13.7%;
   }
 
-  .catalog__title--small {
+  .catalog__title--small h2 {
     display: none;
   }
 
@@ -1615,11 +1615,11 @@ a.address__item.focus-visible:focus {
 }
 
 @media (max-width: 1240px) {
-  .header__link--phone .header__link-text {
+  .header__link--phone span {
     margin-right: 0;
   }
 
-  .header__link--email .header__link-text {
+  .header__link--email span {
     margin-right: 0;
   }
 }
@@ -1667,7 +1667,7 @@ a.address__item.focus-visible:focus {
     margin-right: 20px;
   }
 
-  .header__link-text {
+  .header__link span {
     display: none;
   }
 
@@ -1758,7 +1758,7 @@ a.address__item.focus-visible:focus {
     padding: 56px 49px 45px;
   }
 
-  .catalog__title {
+  .catalog__title h2 {
     margin-bottom: 38px;
   }
 
@@ -1796,7 +1796,7 @@ a.address__item.focus-visible:focus {
     background-size: cover;
   }
 
-  .catalog__card-title {
+  .catalog__card p {
     max-width: 196px;
     padding-top: 37px;
     padding-left: 46px;
@@ -1975,7 +1975,7 @@ a.address__item.focus-visible:focus {
     box-sizing: border-box;
   }
 
-  .intro__btn-text--large {
+  .intro__btn-text--large span {
     display: none;
   }
 
@@ -2051,13 +2051,13 @@ a.address__item.focus-visible:focus {
     padding: 48px 25px 56px;
   }
 
-  .catalog__title {
+  .catalog__title h2 {
     margin-bottom: 28px;
     font-size: 28px;
     line-height: 1.4;
   }
 
-  .catalog__title--large {
+  .catalog__title--large h2 {
     display: none;
   }
 
@@ -2089,7 +2089,7 @@ a.address__item.focus-visible:focus {
     background-image: url("../img/svg/card-arrow-s.svg");
   }
 
-  .catalog__card-title {
+  .catalog__card p {
     max-width: 164px;
     padding-top: 26px;
     padding-left: 30px;
@@ -2236,11 +2236,13 @@ a.address__item.focus-visible:focus {
     margin-bottom: 2px;
   }
 
+  .address__list p,
   .address__item {
     font-size: 14px;
     margin-bottom: 12px;
   }
 
+  .address__list p:first-child,
   .address__item:first-child {
     margin-bottom: 20px;
     opacity: 1;
@@ -2351,15 +2353,15 @@ a.address__item.focus-visible:focus {
     opacity: 0.8;
   }
 
-  a.address__item:hover:not(.focus-visible) {
+  .address__item:hover:not(.focus-visible) {
     opacity: 0.6;
   }
 
-  .modal__close-btn:hover:not(.focus-visible) {
+  .modal__submit-button:hover:not(.focus-visible) {
     opacity: 0.8;
   }
 
-  .modal__submit-button:hover:not(.focus-visible) {
+  .modal__close-btn:hover:not(.focus-visible) {
     opacity: 0.8;
   }
 }

@@ -75,7 +75,7 @@
   }
 }
 
-.header__link-text {
+.header__link span {
   display: inline-block;
   vertical-align: baseline;
   padding-left: 15px;
@@ -83,23 +83,24 @@
   @media (max-width: $vp-1023) {
     display: none;
   }
+}
 
-  .header__link--phone & {
-    margin-right: 155px;
+.header__link--phone span {
+  margin-right: 155px;
 
-    @media (max-width: $vp-1240) {
-      margin-right: 0;
-    }
-  }
-
-  .header__link--email & {
-    margin-right: 100px;
-
-    @media (max-width: $vp-1240) {
-      margin-right: 0;
-    }
+  @media (max-width: $vp-1240) {
+    margin-right: 0;
   }
 }
+
+.header__link--email span {
+  margin-right: 100px;
+
+  @media (max-width: $vp-1240) {
+    margin-right: 0;
+  }
+}
+
 
 .header__button {
   display: block;

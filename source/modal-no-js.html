@@ -32,25 +32,27 @@
           <svg class="header__link-icon" width="20" height="20" fill="currentColor">
             <use xlink:href="./img/sprite_auto.svg#header-email"></use>
           </svg>
-          <span class="header__link-text">info@sd.ru</span>
+          <span>info@sd.ru</span>
         </a>
         <a class="header__link header__link--phone" href="tel:+74950005252">
           <svg class="header__link-icon" width="20" height="20" fill="currentColor">
             <use xlink:href="./img/sprite_auto.svg#header-phone"></use>
           </svg>
-          <span class="header__link-text">+7 (495) 000 52 52</span>
+          <span>+7 (495) 000 52 52</span>
         </a>
         <a class="header__button button" data-modal="open-modal" href="./modal-no-js.html">Заказать звонок</a>
       </div>
     </header>
   </div>
-
+  <main>
+    <h1 class="visually-hidden">Компания Smart Device.</h1>
+  </main>
   <!-- Modal -->
   <div class="modal" data-modal="feedback">
     <div class="modal__wrapper">
       <div class="modal__content">
-        <h4 class="modal__title">Закажите звонок</h4>
-        <p class="modal__description">Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</p>
+        <h4>Закажите звонок</h4>
+        <p>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</p>
         <form action="https://echo.htmlacademy.ru/" method="get">
           <fieldset>
             <label for="modal-input-name" class="visually-hidden"></label>
@@ -68,7 +70,7 @@
           </fieldset>
         </form>
       </div>
-      <a class="modal__close-btn" href="./index.html">
+      <a class="modal__close-btn" href="./index.html" aria-label="Закрыть попап.">
         <svg width="20" height="20">
           <use xlink:href="./img/sprite_auto.svg#icon-close"></use>
         </svg>

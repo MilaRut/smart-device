@@ -24,20 +24,6 @@
   border-radius: 3px;
 }
 
-.modal__close-btn {
-  position: absolute;
-  top: 24px;
-  right: 19px;
-  background-color: transparent;
-  border: none;
-  padding: 5px 7px;
-  cursor: pointer;
-
-  @include hover-focus {
-    opacity: 0.8;
-  }
-}
-
 .modal h4 {
   margin: 0;
   font-family: $ff-roboto;
@@ -147,4 +133,22 @@
   @include hover-focus {
     opacity: 0.8;
   }
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 24px;
+  right: 19px;
+  background-color: transparent;
+  border: none;
+  padding: 5px 7px;
+  cursor: pointer;
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}
+
+.modal__close-btn-icon {
+  pointer-events: none;
 }

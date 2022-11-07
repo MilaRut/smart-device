@@ -8,15 +8,13 @@ const wrapper = document.getElementById('wrapper');
 const INTERACTIVE_ELEMENTS = ['button', 'a', 'input', 'textarea', '[tabindex]'];
 const interactiveElementsArr = wrapper.querySelectorAll(INTERACTIVE_ELEMENTS);
 
-const toggleModal = () => modalContainer.classList.toggle('is-closed');
-
 function openModal() {
   openModalBtn.addEventListener('click', function (e) {
     e.stopPropagation();
     e.preventDefault();
-    toggleModal();
+    modalContainer.classList.toggle('is-closed');
     setTimeout(userName.focus(), 2000);
-    body.classList.add('modal-opened');
+    body.style.overflow = 'hidden';
     interactiveElementsArr.forEach((element) => {
       element.setAttribute('tabindex', '-1');
     });
@@ -24,18 +22,14 @@ function openModal() {
 }
 
 function prepareClosingModal() {
-  toggleModal();
-  body.classList.remove('modal-opened');
+  modalContainer.classList.toggle('is-closed');
+  body.style.overflow = 'scroll';
   interactiveElementsArr.forEach((element) => {
     element.setAttribute('tabindex', '1');
   });
 }
 
 function closeModal() {
-  closeModalBtn.addEventListener('click', function () {
-    prepareClosingModal();
-  });
-
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
       prepareClosingModal();
@@ -43,7 +37,7 @@ function closeModal() {
   });
 
   document.addEventListener('click', function (e) {
-    if (e.target === modalContainer) {
+    if (e.target === modalContainer || e.target === closeModalBtn) {
       prepareClosingModal();
     }
   });

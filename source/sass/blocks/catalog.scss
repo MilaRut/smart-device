@@ -15,7 +15,7 @@
   }
 }
 
-.catalog__title {
+.catalog__title h2 {
   margin: 0;
   font-family: $ff-roboto;
   font-weight: 400;
@@ -33,17 +33,17 @@
     font-size: 28px;
     line-height: 1.4;
   }
+}
 
-  &--small {
-    @media (min-width: $vp-768) {
-      display: none;
-    }
+.catalog__title--small h2 {
+  @media (min-width: $vp-768) {
+    display: none;
   }
+}
 
-  &--large {
-    @media (max-width: $vp-767) {
-      display: none;
-    }
+.catalog__title--large h2 {
+  @media (max-width: $vp-767) {
+    display: none;
   }
 }
 
@@ -214,7 +214,7 @@
   }
 }
 
-.catalog__card-title {
+.catalog__card p {
   max-width: 200px;
   margin: 0;
   font-family: $ff-roboto;
