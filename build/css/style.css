@@ -856,7 +856,28 @@ button,
 }
 
 .about-company .container {
+  position: relative;
   padding: 17px 40px 31px 50px;
+}
+
+.about-company .container::before {
+  position: absolute;
+  content: "2022";
+  top: 75px;
+  left: -28px;
+  width: 320px;
+  height: 200px;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 156px;
+  line-height: 1.41;
+  color: transparent;
+  background: url("../../img/mask.jpg") 22% 57% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .about-company__content {
@@ -1538,25 +1559,12 @@ input[type=checkbox]:focus + label {
     display: none;
   }
 
-  .about-company .container {
-    background-image: url("../img/img-2022.png");
-    background-repeat: no-repeat;
-    background-position: 4.35% 13.7%;
-  }
-
   .catalog__title--small h2 {
     display: none;
   }
 
   .accordion__btn {
     display: none;
-  }
-}
-
-@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 768px) and (min-resolution: 2dppx) {
-  .about-company .container {
-    background-image: url("../img/img-2022@2x.png");
-    background-size: 148px 320px;
   }
 }
 
@@ -1733,6 +1741,11 @@ input[type=checkbox]:focus + label {
     padding: 0 50px;
     padding-bottom: 20px;
     background-position: 46px 4px;
+  }
+
+  .about-company .container::before {
+    top: 64px;
+    left: -34px;
   }
 
   .about-company__content {
@@ -2019,6 +2032,10 @@ input[type=checkbox]:focus + label {
   .about-company .container {
     padding: 0 25px;
     padding-bottom: 20px;
+  }
+
+  .about-company .container::before {
+    display: none;
   }
 
   .about-company__content {
@@ -2311,12 +2328,6 @@ input[type=checkbox]:focus + label {
 
   .catalog__card--third {
     background-image: url("../img/card-mob3@2x.jpg");
-  }
-}
-
-@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1023px), (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1023px), (min-width: 768px) and (min-resolution: 2dppx) and (max-width: 1023px) {
-  .about-company .container {
-    background-size: 150px 321px;
   }
 }
 

@@ -3,22 +3,8 @@
 }
 
 .about-company .container {
+  position: relative;
   padding: 17px 40px 31px 50px;
-
-  @media (min-width: $vp-768) {
-    background-image: url("../img/img-2022.png");
-    background-repeat: no-repeat;
-    background-position: 4.35% 13.7%;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/img-2022@2x.png");
-      background-size: 148px 320px;
-
-      @media (max-width: $vp-1023) {
-        background-size: 150px 321px;
-      }
-    }
-  }
 
   @media (max-width: $vp-1023) {
     padding: 0 50px;
@@ -29,6 +15,32 @@
   @media (max-width: $vp-767) {
     padding: 0 25px;
     padding-bottom: 20px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "2022";
+    top: 75px;
+    left: -28px;
+    width: 320px;
+    height: 200px;
+    transform: rotate(270deg);
+    font-family: $ff-roboto;
+    font-weight: 700;
+    font-size: 156px;
+    line-height: 1.41;
+    color: transparent;
+    background: url("../../img/mask.jpg") 22% 57% no-repeat;
+    background-clip: text;
+
+    @media (max-width: $vp-1023) {
+      top: 64px;
+      left: -34px;
+    }
+
+    @media (max-width: $vp-767) {
+      display: none;
+    }
   }
 }
 
