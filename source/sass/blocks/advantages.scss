@@ -55,8 +55,8 @@
   }
 
   &:hover,
-  &:hover .advantages__item-title,
-  &:hover .advantages__description,
+  &:hover h3,
+  &:hover p,
   &:hover .advantages__icon {
     background-color: $color-deepsky-blue1;
     color: $color-alice-blue3;
@@ -74,19 +74,6 @@
     background-color: $color-deepsky-blue1;
   }
 }
-
-// .advantages__content {
-//   padding: 39px 25px 34px 45px;
-
-//   @media (max-width: $vp-1023) {
-//     padding: 39px 41px 33px 44px;
-//   }
-
-//   @media (max-width: $vp-767) {
-//     min-height: 245px;
-//     padding: 29px 25px 61px;
-//   }
-// }
 
 .advantages__icon {
   fill: $color-deepsky-blue1;

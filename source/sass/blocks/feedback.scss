@@ -197,7 +197,7 @@
   left: 8px;
   width: 1px;
 
-  &:checked + label::before {
+  &:checked+label::before {
     background: url("../img/svg/checkbox-mark-l.svg") center no-repeat;
 
     @media (max-width: $vp-767) {
@@ -250,13 +250,14 @@
       top: 7px;
     }
   }
-
-  &:hover {
-    opacity: 0.6;
-  }
 }
 
-input[type="checkbox"]:focus + label {
-  box-shadow: 0 0 0 3px $color-default-white;
+input[type="checkbox"]:focus-visible + label {
+  box-shadow: 0 0 0 1px $color-default-white;
   border-radius: 3px;
+}
+
+input[type="checkbox"]:hover + label {
+  opacity: 0.6;
+  box-shadow: none;
 }

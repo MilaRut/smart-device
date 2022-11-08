@@ -805,8 +805,8 @@ button,
 }
 
 .advantages__item:hover,
-.advantages__item:hover .advantages__item-title,
-.advantages__item:hover .advantages__description,
+.advantages__item:hover h3,
+.advantages__item:hover p,
 .advantages__item:hover .advantages__icon {
   background-color: #00b2ff;
   color: #f2f5f7;
@@ -875,7 +875,7 @@ button,
   font-size: 156px;
   line-height: 1.41;
   color: transparent;
-  background: url("../../img/mask.jpg") 22% 57% no-repeat;
+  background: url("../img/mask.jpg") 22% 57% no-repeat;
   -webkit-background-clip: text;
   background-clip: text;
 }
@@ -1171,14 +1171,16 @@ button,
   top: 9px;
 }
 
-.feedback label[for=feedback-agreement]:hover {
-  opacity: 0.6;
+input[type=checkbox]:focus-visible + label {
+  -webkit-box-shadow: 0 0 0 1px #ffffff;
+  box-shadow: 0 0 0 1px #ffffff;
+  border-radius: 3px;
 }
 
-input[type=checkbox]:focus + label {
-  -webkit-box-shadow: 0 0 0 3px #ffffff;
-  box-shadow: 0 0 0 3px #ffffff;
-  border-radius: 3px;
+input[type=checkbox]:hover + label {
+  opacity: 0.6;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .footer {
@@ -1468,15 +1470,6 @@ input[type=checkbox]:focus + label {
   background-color: transparent;
   border: 1px solid #ffffff;
   border-radius: 2px;
-}
-
-.modal label[for=modal-agreement]:focus-visible {
-  -webkit-box-shadow: 0 0 0 3px #83b3d3;
-  box-shadow: 0 0 0 3px #83b3d3;
-}
-
-.modal label[for=modal-agreement]:hover {
-  opacity: 0.6;
 }
 
 .modal__submit-button {

@@ -109,14 +109,6 @@
     border: 1px solid $color-default-white;
     border-radius: 2px;
   }
-
-  &:focus-visible {
-    box-shadow: 0 0 0 3px #83b3d3;
-  }
-
-  &:hover {
-    opacity: 0.6;
-  }
 }
 
 .modal__submit-button {
