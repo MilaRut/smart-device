@@ -197,7 +197,7 @@
   left: 8px;
   width: 1px;
 
-  &:checked+label::before {
+  &:checked + label::before {
     background: url("../img/svg/checkbox-mark-l.svg") center no-repeat;
 
     @media (max-width: $vp-767) {
