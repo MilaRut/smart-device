@@ -4,7 +4,7 @@
 
 .advantages .container {
   padding-top: 122px;
-  padding-bottom: 103px;
+  padding-bottom: 104px;
 
   @media (max-width: $vp-1023) {
     padding-top: 80px;
@@ -13,7 +13,7 @@
 
   @media (max-width: $vp-767) {
     padding-top: 50px;
-    padding-bottom: 44px;
+    padding-bottom: 46px;
   }
 }
 
@@ -23,7 +23,7 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: 30px 32px;
 
   @media (max-width: 1023px) {
@@ -32,8 +32,9 @@
   }
 
   @media (max-width: 767px) {
-    grid-template-columns: none;
-    row-gap: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
@@ -50,8 +51,14 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 31px 29px 62px;
-    min-height: 320px;
+    padding: 0;
+    min-height: 340px;
+  }
+
+  &--small {
+    @media (max-width: $vp-767) {
+      min-height: 325px;
+    }
   }
 
   &:hover,
@@ -72,6 +79,18 @@
     top: -1px;
     left: -1px;
     background-color: $color-deepsky-blue1;
+  }
+}
+
+.advantages__content {
+  @media (max-width: $vp-767) {
+    padding: 29px 29px 58px;
+  }
+}
+
+.advantages__item--small .advantages__content {
+  @media (max-width: $vp-767) {
+    padding: 34px 29px 54px;
   }
 }
 

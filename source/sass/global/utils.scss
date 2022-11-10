@@ -6,7 +6,6 @@
   min-height: 100vh;
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
-  background-color: $color-black-pearl1;
 
   .header,
   .footer {
@@ -29,4 +28,40 @@
   border: 0;
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
+}
+
+.error-message {
+  display: none;
+}
+
+.error-message.is-active {
+  display: block;
+  position: absolute;
+  top: 134px;
+  right: 0;
+  background-color: $color-alice-blue2;
+  color: $color-black-pearl1;
+  width: 190px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -8px;
+    left: 24px;
+    width: 18px;
+    height: 18px;
+    background-color: inherit;
+    transform: rotate(45deg);
+  }
+}
+
+.error-message--feedback.is-active {
+  top: 62px;
+
+  @media (max-width: $vp-767) {
+    top: 132px;
+  }
 }

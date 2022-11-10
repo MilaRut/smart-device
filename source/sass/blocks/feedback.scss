@@ -23,6 +23,10 @@
     }
   }
 
+  @media (max-width: $vp-1240) {
+    background-size: 32%;
+  }
+
   @media (max-width: $vp-1023) {
     padding-top: 46px;
     padding-bottom: 125px;
@@ -175,6 +179,7 @@
   font-size: 16px;
   line-height: 1.18;
   color: $color-default-white;
+  order: -1;
 
   @media (max-width: $vp-1023) {
     padding-top: 12px;

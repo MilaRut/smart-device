@@ -73,6 +73,10 @@
   color: $color-default-white;
 }
 
+.modal__submit-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 
 .modal input[type="checkbox"] {
   position: absolute;
@@ -121,6 +125,7 @@
   line-height: 1.18;
   padding-top: 7px;
   margin-bottom: 19px;
+  order: -1;
 
   @include hover-focus {
     opacity: 0.8;

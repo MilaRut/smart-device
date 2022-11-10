@@ -1,3 +1,13 @@
+const errorMessages = document.querySelectorAll('.error-message');
+
+function showErrorMessage() {
+  errorMessages.forEach((item) => item.classList.add('is-active'));
+}
+
+function hideErrorMessage() {
+  errorMessages.forEach((item) => item.classList.remove('is-active'));
+}
+
 let setPhoneMask = function (e) {
 
   let el = e.target;
@@ -21,8 +31,10 @@ let setPhoneMask = function (e) {
     if (/[_\d]/.test(a) && i < val.length) {
       return val.charAt(i++);
     } else if (i >= val.length) {
+      showErrorMessage();
       return '';
     } else {
+      hideErrorMessage();
       return a;
     }
   });

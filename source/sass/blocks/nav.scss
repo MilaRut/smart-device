@@ -2,7 +2,7 @@
   min-width: 500px;
   padding-right: 95px;
 
-  @media (max-width: $vp-1190) {
+  @media (max-width: $vp-1189) {
     min-width: 250px;
     padding-right: 75px;
   }
@@ -10,6 +10,7 @@
   @media (max-width: $vp-1023) {
     min-width: 0;
     margin: 0;
+    margin-right: auto;
     padding: 0;
   }
 
@@ -21,6 +22,12 @@
   }
 }
 
+.nav__wrapper {
+  @media (min-width: $vp-1190) {
+    display: flex;
+  }
+}
+
 .nav__list {
   list-style: none;
   margin: 0;
@@ -28,14 +35,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
-  @media (min-width: $vp-1024) {
-    max-height: 158px;
-  }
-
-  @media (max-width: $vp-1190) {
-    max-height: 100%;
-  }
 
   @media (max-width: $vp-767) {
     display: flex;
