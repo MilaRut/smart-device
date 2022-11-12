@@ -22,10 +22,13 @@
 
 .header .container {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
-  padding-top: 10px;
+  padding-top: 9px;
   padding-bottom: 15px;
+
+  @media (max-width: $vp-1320) and (min-width: $vp-1024) {
+    justify-content: space-between;
+  }
 
   @media (max-width: $vp-767) {
     padding-right: 15px;
@@ -36,8 +39,16 @@
   margin-right: auto;
   padding-left: 2px;
 
+  @media (max-width: $vp-1320) and (min-width: $vp-1024) {
+    margin-right: 0;
+  }
+
   @media (max-width: $vp-1023) {
     padding-left: 1px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 5px;
   }
 }
 
@@ -103,8 +114,8 @@
 .header__link--phone span {
   margin-right: 155px;
 
-  @media (max-width: $vp-1240) {
-    margin-right: 20px;
+  @media (max-width: $vp-1320) and (min-width: $vp-1024) {
+    margin-right: 0;
   }
 }
 
@@ -112,10 +123,9 @@
   margin-right: 100px;
 
   @media (max-width: $vp-1240) {
-    margin-right: 20px;
+    margin-right: 35px;
   }
 }
-
 
 .header__button {
   display: block;
@@ -127,7 +137,7 @@
   color: $color-alice-blue1;
   line-height: 1.14;
   margin-right: 61px;
-  margin-bottom: 5px;
+  margin-top: 5px;
   padding: 10px 0;
 
   @media (max-width: $vp-1023) {

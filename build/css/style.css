@@ -684,12 +684,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-top: 10px;
+  padding-top: 9px;
   padding-bottom: 15px;
 }
 
@@ -755,7 +752,7 @@ button,
   color: #f2f5f6;
   line-height: 1.14;
   margin-right: 61px;
-  margin-bottom: 5px;
+  margin-top: 5px;
   padding: 10px 0;
 }
 
@@ -1687,12 +1684,8 @@ input[type=checkbox]:hover + label {
     max-width: 420px;
   }
 
-  .header__link--phone span {
-    margin-right: 20px;
-  }
-
   .header__link--email span {
-    margin-right: 20px;
+    margin-right: 35px;
   }
 
   .feedback .container {
@@ -2017,6 +2010,10 @@ input[type=checkbox]:hover + label {
 
   .header .container {
     padding-right: 15px;
+  }
+
+  .header__logo {
+    padding-top: 5px;
   }
 
   .header__logo-image {
@@ -2432,6 +2429,22 @@ input[type=checkbox]:hover + label {
 
   .catalog__card--third {
     background-image: url("../img/card-mob3@2x.jpg");
+  }
+}
+
+@media (max-width: 1320px) and (min-width: 1024px) {
+  .header .container {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    margin-right: 0;
+  }
+
+  .header__link--phone span {
+    margin-right: 0;
   }
 }
 
